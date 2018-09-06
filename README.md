@@ -27,11 +27,14 @@ Installation Ubuntu
 ```sh
 git clone git@github.com:Lelik13a/Zabbix-Supervisor-Check.git
 cd Zabbix-Supervisor-Check
+# vim /etc/zabbix/supervisor_check.pl # set yours $ZabbixServer and $HostName for zabbix_sender.
 sudo cp supervisor_check.pl /etc/zabbix/
 sudo cp zabbix_agentd.d/supervisor.conf /etc/zabbix/zabbix_agentd.conf.d/
 sudo cp sudoers.d/zabbix /etc/sudoers.d/
 sudo chown root:root /etc/sudoers.d/zabbix
 sudo chmod 440 /etc/sudoers.d/zabbix
 sudo chmod 755 /etc/zabbix/supervisor_check.pl
-#vim /etc/zabbix/supervisor_check.pl
+sudo cp cron.d/zabbix_supervisor_check /etc/cron.d/
+sudo service cron reload
+
 ```
