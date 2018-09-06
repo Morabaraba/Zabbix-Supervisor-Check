@@ -21,3 +21,17 @@ Installation
 9. apply template "Template App Supervisor" host.
 10. copy cron.d/zabbix_supervisor_check to /etc/cron.d/ and reload crond.
 
+Installation Ubuntu
+-------------------
+
+```sh
+git clone git@github.com:Lelik13a/Zabbix-Supervisor-Check.git
+cd Zabbix-Supervisor-Check
+sudo cp supervisor_check.pl /etc/zabbix/
+sudo cp zabbix_agentd.d/supervisor.conf /etc/zabbix/zabbix_agentd.conf.d/
+sudo cp sudoers.d/zabbix /etc/sudoers.d/
+sudo chown root:root /etc/sudoers.d/zabbix
+sudo chmod 440 /etc/sudoers.d/zabbix
+sudo chmod 755 /etc/zabbix/supervisor_check.pl
+#vim /etc/zabbix/supervisor_check.pl
+```
