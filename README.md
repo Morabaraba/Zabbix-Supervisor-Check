@@ -13,7 +13,7 @@ libswitch-perl library.
 Installation
 ============
 
-In ten easy steps.
+In ten steps.
 
 1. copy `supervisor_check.pl` to `/etc/zabbix/`
 2. copy `zabbix_agentd.d/supervisor.conf` to `/etc/zabbix/zabbix_agentd.d/`
@@ -29,7 +29,7 @@ In ten easy steps.
 Installation Ubuntu
 -------------------
 
-Should be able to copy and paste for easy installation.
+Should be able to copy and paste to installation.
 
 ```sh
 sudo apt-get install libswitch-perl
