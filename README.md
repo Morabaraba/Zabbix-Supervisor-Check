@@ -47,6 +47,7 @@ sudo chmod 440 /etc/sudoers.d/zabbix
 sudo chmod 755 /etc/zabbix/supervisor_check.pl
 sudo cp cron.d/zabbix_supervisor_check /etc/cron.d/
 sudo service cron reload
+# /etc/zabbix/supervisor_check.pl status # execute to test
 ```
 
 License
