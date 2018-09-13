@@ -29,7 +29,7 @@ In ten steps.
 Installation Ubuntu
 -------------------
 
-Should be able to copy and paste to installation.
+Should be able to copy and paste to install.
 
 ```sh
 sudo apt-get install libswitch-perl
