@@ -32,6 +32,7 @@ Installation Ubuntu
 Should be able to copy and paste for easy installation.
 
 ```sh
+sudo apt-get install libswitch-perl
 git clone git@github.com:Lelik13a/Zabbix-Supervisor-Check.git
 # or
 # git clone https://github.com/Lelik13a/Zabbix-Supervisor-Check.git
