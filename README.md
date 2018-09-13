@@ -24,8 +24,12 @@ Installation
 Installation Ubuntu
 -------------------
 
+Should be able to copy and paste for easy installation.
+
 ```sh
 git clone git@github.com:Lelik13a/Zabbix-Supervisor-Check.git
+# or
+# git clone https://github.com/Lelik13a/Zabbix-Supervisor-Check.git
 cd Zabbix-Supervisor-Check
 # vim /etc/zabbix/supervisor_check.pl # set yours $ZabbixServer and $HostName for zabbix_sender.
 sudo cp supervisor_check.pl /etc/zabbix/
