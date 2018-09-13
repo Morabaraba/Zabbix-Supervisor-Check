@@ -39,6 +39,7 @@ cd Zabbix-Supervisor-Check
 # vim /etc/zabbix/supervisor_check.pl # set yours $ZabbixServer and $HostName for zabbix_sender.
 sudo cp supervisor_check.pl /etc/zabbix/
 sudo cp zabbix_agentd.d/supervisor.conf /etc/zabbix/zabbix_agentd.conf.d/
+service zabbix-agent restart
 sudo cp sudoers.d/zabbix /etc/sudoers.d/
 sudo chown root:root /etc/sudoers.d/zabbix
 sudo chmod 440 /etc/sudoers.d/zabbix
